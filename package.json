@@ -3,12 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "dev": "next dev --turbopack",
     "email": "email dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "postinstall": "prisma generate"
+  },
+  "resolutions": {
+    "lightningcss": "1.23.0"
   },
   "dependencies": {
     "@arcjet/next": "^1.0.0-beta.10",
